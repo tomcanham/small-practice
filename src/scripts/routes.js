@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, IndexRoute } from 'react-router'
-import homePage from './pages/homePage'
+import homePage from './pages/homePage/page'
 
 const routes =
   <Route path="/">
