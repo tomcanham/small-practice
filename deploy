@@ -7,4 +7,5 @@ npm install
 
 webpack
 
+rm -rf /var/www/small-practice/*
 cp -Rf ./dist/* /var/www/small-practice/
