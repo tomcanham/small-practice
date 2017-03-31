@@ -1,11 +1,17 @@
 #!/bin/bash
 cd ~/small-practice
 
+@echo Fetching latest code...
 git pull
 
+@echo Updating packages...
 npm install
 
+@echo Packing website...
 webpack
 
+@echo Removing old distribution...
 rm -rf /var/www/small-practice/*
+
+@echo Creating new distribution...
 cp -Rf ./dist/* /var/www/small-practice/
