@@ -1,5 +1,5 @@
 import * as c from './constants'
-import api from '../../api/api'
+import api from '../api/index'
 
 export const getMotd = () => async (dispatch) => {
   const motd = await api.motd()

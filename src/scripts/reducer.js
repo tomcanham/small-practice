@@ -2,9 +2,9 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 
-import homePage from './pages/homePage/reducer'
+import application from './application/reducer'
 
 export default combineReducers({
-  homePage,
+  application,
   routing: routerReducer
 })
