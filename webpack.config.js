@@ -9,7 +9,7 @@ const nodeEnvPlugin = new webpack.DefinePlugin({
 })
 
 module.exports = {
-  entry: ["babel-polyfill", "./src/scripts/index.jsx"],
+  entry: ["babel-polyfill", "./src/scripts/index.js"],
   output: {
     path: "dist",
     filename: '[name].js' // Template based on keys in entry above
