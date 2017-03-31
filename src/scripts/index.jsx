@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom'
 
 // routing stuff
 import { Router, browserHistory } from 'react-router'
-import routes from './routes'
+import routes from './routes.jsx'
 
 // redux store
 import { Provider } from 'react-redux'
