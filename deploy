@@ -1,0 +1,8 @@
+#!/bin/bash
+git pull
+
+npm install
+
+webpack
+
+cp -Rf ./dist/* /var/www/small-practice/
