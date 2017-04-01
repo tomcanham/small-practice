@@ -1,5 +1,5 @@
 #header {
-  background-color: gray;
+  background-color: silver;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -34,7 +34,7 @@
       text-decoration: none;
 
       &:hover {
-        background-color: lighten(gray, 10%);
+        background-color: lighten(silver, 10%);
       }
     }
   }
