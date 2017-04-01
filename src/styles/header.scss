@@ -1,70 +1,57 @@
 #header {
-  background-color: silver;
+  background-color: gray;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   border-top-left-radius: 1rem;
-  padding: 1rem;
+  padding: .5rem;
 
-  a {
-    text-decoration: none;
-  }
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
 
   .logo {
-    flex-grow: 1;
-    display: flex;
-    align-items: flex-start;
+    align-self: flex-start;
   }
 
-  .user-menu {
-    flex-grow: 1;
-    align-items: flex-end;
+  nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .menu {
-    flex-grow: 1;
+  .menu-item {
+    min-width: 10rem;
     display: flex;
-    flex-direction: column;
-    position: relative;
 
-    &.opened {
-      background-color: lighten(gray, 10%);
-
-      .items {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: silver;
-        z-index: 1;
-        width: 100%;
-      }
-    }
-
-    .items {
-      display: none;
-    }
-
-    .menu-item, .menu-header {
-      height: 2rem;
+    a {
+      padding: .5rem;
       flex-grow: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      cursor: pointer;
-
-      a {
-        text-align: center;
-        vertical-align: middle;
-        width: 100%;
-        height: 100%;
-      }
+      text-decoration: none;
 
       &:hover {
         background-color: lighten(gray, 10%);
       }
     }
+  }
+
+  nav.main {
+    flex-grow: 1;
+  }
+
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu ul li > ul {
+    flex-direction: column;
   }
 }
