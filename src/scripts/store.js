@@ -1,5 +1,6 @@
 // redux and middleware
-import { createStore, applyMiddleware } from 'redux'
+import { createStore, applyMiddleware, compose } from 'redux'
+import { routerMiddleware } from 'react-router-redux'
 
 import thunk from 'redux-thunk'
 
@@ -10,5 +11,5 @@ import reducers from './reducer'
 export default createStore(
   reducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-  applyMiddleware(thunk) // store enhancer
+  compose(applyMiddleware(thunk) // store enhancer
 )

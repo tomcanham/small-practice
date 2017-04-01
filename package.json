@@ -54,6 +54,7 @@
     "html-webpack-plugin": "^2.9.0",
     "less": "^2.6.1",
     "less-loader": "^2.2.2",
+    "lodash": "^4.17.4",
     "node-sass": "^3.4.2",
     "npm-install-webpack-plugin": "^2.0.2",
     "react-file-download": "^0.3.2",

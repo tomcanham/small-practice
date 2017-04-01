@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from './actions'
 
+import Header from '../header/component'
+
 class App extends Component {
   static propTypes = {
     children: React.PropTypes.any.isRequired,
@@ -18,10 +20,11 @@ class App extends Component {
   render() {
     const { children } = this.props
 
-    return <div className="app">
-      {children}
+    return <div>
+      <Header />
+      <div className="content">{children}</div>
     </div>
   }
 }
 
-export default connect((state) => state, { ...actions })(App)
+export default connect((state) => state.application, { ...actions })(App)
